@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xD</title>
+</head>
+<body>
+  <!-- Render the PDF -->
+  <h1>Please Upload your PDF xD</h1>
+
+  <!-- Render the form -->
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload PDF</button>
+  </form>
+</body>
+</html>
